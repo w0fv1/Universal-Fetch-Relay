@@ -1,15 +1,37 @@
 {
   "name": "universal-fetch-relay",
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "description": "A stateless, authenticated, streaming HTTP(S) Fetch Relay for Cloudflare Workers.",
   "private": true,
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/w0fv1/universal-fetch-relay.git"
+  },
+  "bugs": {
+    "url": "https://github.com/w0fv1/universal-fetch-relay/issues"
+  },
+  "homepage": "https://w0fv1.github.io/universal-fetch-relay/",
   "scripts": {
     "deploy": "wrangler deploy",
     "dev": "wrangler dev",
     "start": "wrangler dev",
-    "test": "vitest run"
+    "test": "vitest run",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "overrides": {
+    "vitepress": {
+      "vite": "6.4.3"
+    }
   },
   "devDependencies": {
     "@cloudflare/vitest-pool-workers": "^0.22.0",
+    "vitepress": "^1.6.4",
     "vitest": "~4.1.0",
     "wrangler": "^4.125.0"
   }
