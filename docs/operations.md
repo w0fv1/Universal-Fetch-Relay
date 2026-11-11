@@ -10,6 +10,8 @@ npm run docs:dev     # local documentation
 npm run docs:build   # production documentation build
 ```
 
+Testing dependencies are declared in [package.json](../package.json); the Workers runtime integration is configured in [vitest.config.mjs](../vitest.config.mjs).
+
 ## Rotate the Relay token
 
 ```bash
