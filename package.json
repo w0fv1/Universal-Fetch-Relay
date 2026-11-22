@@ -30,9 +30,9 @@
     }
   },
   "devDependencies": {
-    "@cloudflare/vitest-plugin": "^1.8.0",
+    "@cloudflare/vitest-plugin": "^1.8.5",
     "vitepress": "^1.6.4",
-    "vitest": "~5.1.0",
+    "vitest": "~5.1.1",
     "wrangler": "^4.148.0"
   }
 }
